@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	version 2.0
+	2020-04-23
+	Todos los cambios se hicieron para que el RSS sea aceptado por Spotify, Google
+	y para actualizar algunos cambios que Apple implementó
+	
+	Guías:
+	RSS 2.0 Specification https://cyber.harvard.edu/rss/rss.html
+	Apple - A podcaster’s guide to RSS https://help.apple.com/itc/podcasts_connect/#/itcb54353390
+	Spotify - Podcast Delivery Specification https://podcasters.spotify.com/terms/Spotify_Podcast_Delivery_Specification_v1.6.pdf
+	Google - Requisitos de feed RSS para Google Podcasts https://developers.google.com/search/reference/podcast/rss-feed
+-->
+<rss
+		xmlns:media="http://search.yahoo.com/mrss/"
+		xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+		xmlns:atom="http://www.w3.org/2005/Atom"
+		xmlns:dc="http://purl.org/dc/elements/1.1/"
+		xmlns:georss="http://www.georss.org/georss"
+		xmlns:dcterms="https://purl.org/dc/terms/"
+		xmlns:spotify="https://www.spotify.com/ns/rss"
+		xmlns:psc="https://podlove.org/simple-chapters/"
+		xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0"
+		xmlns:content="http://purl.org/rss/1.0/modules/content/"
+		version="2.0">
+
+
+	<channel>
+		<title>#LoxaEsMás (podcast)</title>
+		<itunes:title>#LoxaEsMás (podcast)</itunes:title>
+		<description><![CDATA[<p>Bienvenidos al podcast “antiprofesional” y plurárquico de #LoxaEsMás, hackeando la democracia semana a semana. Un programa del colectivo donde conversamos sobre participación y veeduría ciudadana, política, democracia, gobernanza, etc. No es un programa de entrevistas para una radio conducido por expertos periodistas, aburrido y limitado por un eje ideológico clásico, sino es una conversación de sobremesa amena y espontánea en la sala del anfitrión con los integrantes del Colectivo y con un vino de por medio. También lo puedes escuchar en vivo todos los sábados a las 20h30 en Radio Kocodrilo en Loxa, al sur de Ecuador.</p> <p>Actualización abril de 2020: Este podcast dejó de producirse y transmitirse, se lo ofrece con motivos de referencia.</p>]]></description>
+		<itunes:summary><![CDATA[<p>Bienvenidos al podcast “antiprofesional” y plurárquico de #LoxaEsMás, hackeando la democracia semana a semana. Un programa del colectivo donde conversamos sobre participación y veeduría ciudadana, política, democracia, gobernanza, etc. No es un programa de entrevistas para una radio conducido por expertos periodistas, aburrido y limitado por un eje ideológico clásico, sino es una conversación de sobremesa amena y espontánea en la sala del anfitrión con los integrantes del Colectivo y con un vino de por medio. También lo puedes escuchar en vivo todos los sábados a las 20h30 en Radio Kocodrilo en Loxa, al sur de Ecuador.</p> <p>Actualización abril de 2020: Este podcast dejó de producirse y transmitirse, se lo ofrece con motivos de referencia.</p>]]></itunes:summary>
+		<googleplay:description><![CDATA[<p>Bienvenidos al podcast “antiprofesional” y plurárquico de #LoxaEsMás, hackeando la democracia semana a semana. Un programa del colectivo donde conversamos sobre participación y veeduría ciudadana, política, democracia, gobernanza, etc. No es un programa de entrevistas para una radio conducido por expertos periodistas, aburrido y limitado por un eje ideológico clásico, sino es una conversación de sobremesa amena y espontánea en la sala del anfitrión con los integrantes del Colectivo y con un vino de por medio. También lo puedes escuchar en vivo todos los sábados a las 20h30 en Radio Kocodrilo en Loxa, al sur de Ecuador.</p> <p>Actualización abril de 2020: Este podcast dejó de producirse y transmitirse, se lo ofrece con motivos de referencia.</p>]]></googleplay:description>
+		<language>es-EC</language>
+		<itunes:category text="News">
+			<itunes:category text="Politics" />
+		</itunes:category>
+		<itunes:category text="Society &amp; Culture" />
+		<itunes:category text="Technology" />
+		<googleplay:category text="News &amp; Politics"/>
+		<itunes:explicit>no</itunes:explicit>
+		<googleplay:explicit>no</googleplay:explicit>
+		<itunes:author>#LoxaEsMás</itunes:author>
+		<googleplay:author>#LoxaEsMás</googleplay:author>
+		<link>https://loxaesmas.org/podcast</link>
+		<itunes:owner>
+            <itunes:name>Carlos Correa</itunes:name>
+            <itunes:email>calu@loxaesmas.org</itunes:email>
+        </itunes:owner>
+        <itunes:type>episodic</itunes:type>
+        <copyright>(CC BY-SA 4.0) Reconocimiento-CompartirIgual 4.0 Internacional https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES</copyright>
+        <itunes:complete>yes</itunes:complete> <!-- snif -->
+        <managingEditor>calu@loxaesmas.org (calú)</managingEditor>
+        <webMaster>calu@loxaesmas.org (calú)</webMaster>
+        <lastBuildDate>Sat, 11 May 2013 20:30:00 -0500</lastBuildDate>
+		<category>Podcast</category>
+		<generator>calú v2.0</generator>
+		<docs>https://cyber.harvard.edu/rss/rss.html</docs>
+        <image>
+        	<url>https://s3.amazonaws.com/podcast_/logo1400x1400.jpg</url>
+			<title>#LoxaEsMás (podcast)</title>
+        	<link>https://loxaesmas.org/podcast</link>
+        </image>
+        <itunes:image href="https://s3.amazonaws.com/podcast_/logo1400x1400.jpg"></itunes:image>
+        <googleplay:image href="https://s3.amazonaws.com/podcast_/logo1400x1400.jpg"/>
+		<itunes:subtitle>El podcast “antiprofesional” y plurárquico de #LoxaEsMás</itunes:subtitle>
+        <itunes:keywords>loxa, loja, ecuador, loxaesmás, hackeando la democracia, loxaesmas.org, participación ciudadana, política, colectivo, democracia, gobernanza, veeduría</itunes:keywords>
+		<spotify:countryOfOrigin>ec</spotify:countryOfOrigin>
+		<atom:link href="https://s3.amazonaws.com/podcast_/podcast.xml" rel="self" type="application/rss+xml" />
+		<link href="https://s3.amazonaws.com/podcast_/podcast.xml" rel="alternate" type="application/rss+xml"  title="#LoxaEsMás (podcast)" />
+		
+
+
+
+
+<!-- ******************* -->
+
+		<item>
+			<guid isPermaLink="false">t01e01_avance</guid>
+			<title>t01e01 avance</title>
+			<itunes:title>t01e01 avance</itunes:title>
+			<itunes:season>01</itunes:season>
+			<itunes:episode>01</itunes:episode>
+			<enclosure url="https://s3.amazonaws.com/podcast_/t01/t01e01_avance.mp3" length="1254839" type="audio/mpeg" />
+			<pubDate>Fri, 2 Nov 2012 13:00:00 -0500</pubDate>
+			<descrription>Avance de 30 segundos del primer episodio del podcast #t01e01</descrription>
+			<itunes:summary>Avance de 30 segundos del primer episodio del podcast #t01e01</itunes:summary>
+			<content:encoded>Avance de 30 segundos del primer episodio del podcast #t01e01</content:encoded>
+			<googleplay:description>Avance de 30 segundos del primer episodio del podcast #t01e01</googleplay:description>
+			<itunes:duration>00:00:30</itunes:duration>
+			<link>https://loxaesmas.org/2012/11/10/t01e01.html</link>
+			<itunes:image href="https://s3.amazonaws.com/podcast_/t01/t01e01.jpg"></itunes:image>
+			<itunes:episodeType>trailer</itunes:episodeType>
+			<comments>http://loxaesmas.org/2012/11/10/t01e01.html#comments</comments>
+			<itunes:subtitle>Un abreboca del primer episodio del podcast #t01e01</itunes:subtitle>
+			<itunes:keywords>#t01e01</itunes:keywords>
+			<itunes:order>1</itunes:order>
+		<!-- fin de la edición -->
+			<itunes:explicit>false</itunes:explicit>
+			<googleplay:explicit>no</googleplay:explicit>			
+			<itunes:author>#LoxaEsMás</itunes:author>
+			<dc:publisher>#LoxaEsMás</dc:publisher>
+			<category>Podcast</category>
+			<georss:point>-3.9884720000 -79.2682480333</georss:point>
+			<georss:elev>2958</georss:elev>
+			<author>hola@loxaesmas.org (#LoxaEsMás)</author>
+			<itunes:isClosedCaptioned>no</itunes:isClosedCaptioned>
+			<dc:creator>#LoxaEsMás</dc:creator>
+		</item>
+
+		<item>
+			<guid isPermaLink="false">t01e01</guid>
+			<title>Participación ciudadana y redes sociales, la cultura y la comunicación en Loxa, y la #MinkaDeLoxa</title>
+			<itunes:title>Participación ciudadana y redes sociales, la cultura y la comunicación en Loxa, y la #MinkaDeLoxa</itunes:title>
+			<itunes:season>01</itunes:season>
+			<itunes:episode>01</itunes:episode>
+			<enclosure url="https://s3.amazonaws.com/podcast_/t01/t01e01.mp3" length="29320193" type="audio/mpeg" />
+			<pubDate>Sat, 10 Nov 2012 20:30:00 -0500</pubDate>
+			<descrription>Rosy Jaramillo (@rosijaramilloe) y René Ortega (@rortegariofrio) inician este primer episodio conversando con Pablo Burneo sobre la participación ciudadana y las redes sociales. Luego calú (@calu) dialoga con Félix Paladines sobre el rol que desempeñó la cultura en Loxa durante los años de su historia. A continuación Denise Calle (@niches13) y Pablo Villamagua (@vpablini) conversan con Gabriel García (@gulpiano1) sobre los primeros pasos de la comunicación social en nuestra ciudad. Finalmente Gigio Benavides (@gigiobenavides) nos comentará sobre la marcha de Rebelión Lojana (@RebelionLojana), junto a Fernando Zhingre (@fernandozhingre) y Mario Gualán (@mario_gualan).</descrription>
+			<itunes:summary>Rosy Jaramillo (@rosijaramilloe) y René Ortega (@rortegariofrio) inician este primer episodio conversando con Pablo Burneo sobre la participación ciudadana y las redes sociales. Luego calú (@calu) dialoga con Félix Paladines sobre el rol que desempeñó la cultura en Loxa durante los años de su historia. A continuación Denise Calle (@niches13) y Pablo Villamagua (@vpablini) conversan con Gabriel García (@gulpiano1) sobre los primeros pasos de la comunicación social en nuestra ciudad. Finalmente Gigio Benavides (@gigiobenavides) nos comentará sobre la marcha de Rebelión Lojana (@RebelionLojana), junto a Fernando Zhingre (@fernandozhingre) y Mario Gualán (@mario_gualan).</itunes:summary>
+			<content:encoded>Rosy Jaramillo (@rosijaramilloe) y René Ortega (@rortegariofrio) inician este primer episodio conversando con Pablo Burneo sobre la participación ciudadana y las redes sociales. Luego calú (@calu) dialoga con Félix Paladines sobre el rol que desempeñó la cultura en Loxa durante los años de su historia. A continuación Denise Calle (@niches13) y Pablo Villamagua (@vpablini) conversan con Gabriel García (@gulpiano1) sobre los primeros pasos de la comunicación social en nuestra ciudad. Finalmente Gigio Benavides (@gigiobenavides) nos comentará sobre la marcha de Rebelión Lojana (@RebelionLojana), junto a Fernando Zhingre (@fernandozhingre) y Mario Gualán (@mario_gualan).</content:encoded>
+			<googleplay:description>Rosy Jaramillo (@rosijaramilloe) y René Ortega (@rortegariofrio) inician este primer episodio conversando con Pablo Burneo sobre la participación ciudadana y las redes sociales. Luego calú (@calu) dialoga con Félix Paladines sobre el rol que desempeñó la cultura en Loxa durante los años de su historia. A continuación Denise Calle (@niches13) y Pablo Villamagua (@vpablini) conversan con Gabriel García (@gulpiano1) sobre los primeros pasos de la comunicación social en nuestra ciudad. Finalmente Gigio Benavides (@gigiobenavides) nos comentará sobre la marcha de Rebelión Lojana (@RebelionLojana), junto a Fernando Zhingre (@fernandozhingre) y Mario Gualán (@mario_gualan).</googleplay:description>
+			<itunes:duration>00:30:23</itunes:duration>
+			<link>https://loxaesmas.org/2012/11/10/t01e01.html</link>
+			<itunes:image href="https://s3.amazonaws.com/podcast_/t01/t01e01.jpg"></itunes:image>
+			<itunes:episodeType>full</itunes:episodeType>
+			<comments>http://loxaesmas.org/2012/11/10/t01e01.html#comments</comments>
+			<itunes:subtitle>Lanzamos el primer podcast“antiprofesional” y plurárquico del Colectivo, vayan abriendo sus botellas de vino y acomodándose en el calor del hogar para empezar a escucharlo.</itunes:subtitle>
+			<itunes:keywords>Félix Paladines, Gabriel García, historia, inicios de la comunicación, Pablo Burneo, podcast, rebelión loxana, t01, t01e01</itunes:keywords>
+			<itunes:order>2</itunes:order>
+		<!-- fin de la edición -->
+			<itunes:explicit>false</itunes:explicit>
+			<googleplay:explicit>no</googleplay:explicit>			
+			<itunes:author>#LoxaEsMás</itunes:author>
+			<dc:publisher>#LoxaEsMás</dc:publisher>
+			<category>Podcast</category>
+			<georss:point>-3.9884720000 -79.2682480333</georss:point>
+			<georss:elev>2958</georss:elev>
+			<author>hola@loxaesmas.org (#LoxaEsMás)</author>
+			<itunes:isClosedCaptioned>no</itunes:isClosedCaptioned>
+			<dc:creator>#LoxaEsMás</dc:creator>		
+		</item>
+
+		<item>
+			<guid isPermaLink="false">t01e02_avance</guid>
+			<title>t01e02 avance</title>
+			<itunes:title>t01e02 avance</itunes:title>
+			<itunes:season>01</itunes:season>
+			<itunes:episode>02</itunes:episode>
+			<enclosure url="http://s3.amazonaws.com/podcast_/t01/t01e02_avance.mp3" length="966238" type="audio/mpeg" />
+			<pubDate>Mon, 12 Nov 2012 13:00:00 -0500</pubDate>
+			<descrription>Avance de 30 segundos del segundo episodio del podcast #t01e01</descrription>
+			<itunes:summary>Avance de 30 segundos del segundo episodio del podcast #t01e01</itunes:summary>
+			<content:encoded>Avance de 30 segundos del segundo episodio del podcast #t01e01</content:encoded>
+			<googleplay:description>Avance de 30 segundos del segundo episodio del podcast #t01e01</googleplay:description>
+			<itunes:duration>00:00:30</itunes:duration>
+			<link>https://loxaesmas.org/2012/11/17/t01e02-tecnologia-arte-y-cultura-manuel-carrion-pinzano-el-gad-municipal-y-loja-inteligente.html</link>
+			<itunes:image href="https://s3.amazonaws.com/podcast_/t01/t01e02.jpg"></itunes:image>
+			<itunes:episodeType>trailer</itunes:episodeType>
+			<comments>https://loxaesmas.org/2012/11/17/t01e02-tecnologia-arte-y-cultura-manuel-carrion-pinzano-el-gad-municipal-y-loja-inteligente.html#comments</comments>
+			<itunes:subtitle>Un abreboca del segundo episodio del podcast #t01e02</itunes:subtitle>
+			<itunes:keywords>#t01e02</itunes:keywords>
+			<itunes:order>3</itunes:order>
+		<!-- fin de la edición -->
+			<itunes:explicit>false</itunes:explicit>
+			<googleplay:explicit>no</googleplay:explicit>			
+			<itunes:author>#LoxaEsMás</itunes:author>
+			<dc:publisher>#LoxaEsMás</dc:publisher>
+			<category>Podcast</category>
+			<georss:point>-3.9884720000 -79.2682480333</georss:point>
+			<georss:elev>2958</georss:elev>
+			<author>hola@loxaesmas.org (#LoxaEsMás)</author>
+			<itunes:isClosedCaptioned>no</itunes:isClosedCaptioned>
+			<dc:creator>#LoxaEsMás</dc:creator>
+		</item>
+
+		<item>
+			<guid isPermaLink="false">t01e02</guid>
+			<title>Tecnología, arte y cultura, Manuel Carrión Pinzano, el GAD Municipal y Loja Inteligente</title>
+			<itunes:title>Tecnología, arte y cultura, Manuel Carrión Pinzano, el GAD Municipal y Loja Inteligente</itunes:title>
+			<itunes:season>01</itunes:season>
+			<itunes:episode>02</itunes:episode>
+			<enclosure url="http://s3.amazonaws.com/podcast_/t01/t01e02.mp3" length="30220588" type="audio/mpeg" />
+			<pubDate>Sat, 17 Nov 2012 20:30:00 -0500</pubDate>
+			<descrription>Hoy vamos a conversar sobre tecnología, pero tranquilos que no vamos a usar ese lenguaje extraño que tienen los informáticos. Abran sus botellas de vino y prepárense para visitar la casa de Nelson Piedra (@nopiedra) junto a Darwin Betancourt (@1mdarwin) y Efraín Encarnación (@efrainecua). Arte y cultura en Loxa, visitamos la sala de William Brayanes y junto a calú (@calu) seguimos conversando; ojo que William nos comentará una primicia sobre su futura publicación. ¿Qué tanto sabes sobre Manuel Carrión Pinzano? Jeamil Burneo (@jsburneo) nos acoge en la sala de su casa para conversar con Andrea Samaniego (@AndreSamaniego_) y Pablo Correa (@correapabloivan). Luego calú (@calu) conversará con Lindon Sanmartin (@lindonsanmartin) sobre la comunicación del Municipio en redes sociales y las Fiestas de Independencia de nuestra ciudad. Finalmente estaremos conversando sobre otro colectivo denominado Loja Inteligente (@loxainteligente) con Marco González (@MARCOGONZALEZN), Pablo Celi (@PabloCeli1) y Pablo Correa (@correapabloivan). Escucha (y recomienda) el podcast a continuación...</descrription>
+			<itunes:summary>Hoy vamos a conversar sobre tecnología, pero tranquilos que no vamos a usar ese lenguaje extraño que tienen los informáticos. Abran sus botellas de vino y prepárense para visitar la casa de Nelson Piedra (@nopiedra) junto a Darwin Betancourt (@1mdarwin) y Efraín Encarnación (@efrainecua). Arte y cultura en Loxa, visitamos la sala de William Brayanes y junto a calú (@calu) seguimos conversando; ojo que William nos comentará una primicia sobre su futura publicación. ¿Qué tanto sabes sobre Manuel Carrión Pinzano? Jeamil Burneo (@jsburneo) nos acoge en la sala de su casa para conversar con Andrea Samaniego (@AndreSamaniego_) y Pablo Correa (@correapabloivan). Luego calú (@calu) conversará con Lindon Sanmartin (@lindonsanmartin) sobre la comunicación del Municipio en redes sociales y las Fiestas de Independencia de nuestra ciudad. Finalmente estaremos conversando sobre otro colectivo denominado Loja Inteligente (@loxainteligente) con Marco González (@MARCOGONZALEZN), Pablo Celi (@PabloCeli1) y Pablo Correa (@correapabloivan). Escucha (y recomienda) el podcast a continuación...</itunes:summary>
+			<content:encoded>Hoy vamos a conversar sobre tecnología, pero tranquilos que no vamos a usar ese lenguaje extraño que tienen los informáticos. Abran sus botellas de vino y prepárense para visitar la casa de Nelson Piedra (@nopiedra) junto a Darwin Betancourt (@1mdarwin) y Efraín Encarnación (@efrainecua). Arte y cultura en Loxa, visitamos la sala de William Brayanes y junto a calú (@calu) seguimos conversando; ojo que William nos comentará una primicia sobre su futura publicación. ¿Qué tanto sabes sobre Manuel Carrión Pinzano? Jeamil Burneo (@jsburneo) nos acoge en la sala de su casa para conversar con Andrea Samaniego (@AndreSamaniego_) y Pablo Correa (@correapabloivan). Luego calú (@calu) conversará con Lindon Sanmartin (@lindonsanmartin) sobre la comunicación del Municipio en redes sociales y las Fiestas de Independencia de nuestra ciudad. Finalmente estaremos conversando sobre otro colectivo denominado Loja Inteligente (@loxainteligente) con Marco González (@MARCOGONZALEZN), Pablo Celi (@PabloCeli1) y Pablo Correa (@correapabloivan). Escucha (y recomienda) el podcast a continuación...</content:encoded>
+			<googleplay:description>Hoy vamos a conversar sobre tecnología, pero tranquilos que no vamos a usar ese lenguaje extraño que tienen los informáticos. Abran sus botellas de vino y prepárense para visitar la casa de Nelson Piedra (@nopiedra) junto a Darwin Betancourt (@1mdarwin) y Efraín Encarnación (@efrainecua). Arte y cultura en Loxa, visitamos la sala de William Brayanes y junto a calú (@calu) seguimos conversando; ojo que William nos comentará una primicia sobre su futura publicación. ¿Qué tanto sabes sobre Manuel Carrión Pinzano? Jeamil Burneo (@jsburneo) nos acoge en la sala de su casa para conversar con Andrea Samaniego (@AndreSamaniego_) y Pablo Correa (@correapabloivan). Luego calú (@calu) conversará con Lindon Sanmartin (@lindonsanmartin) sobre la comunicación del Municipio en redes sociales y las Fiestas de Independencia de nuestra ciudad. Finalmente estaremos conversando sobre otro colectivo denominado Loja Inteligente (@loxainteligente) con Marco González (@MARCOGONZALEZN), Pablo Celi (@PabloCeli1) y Pablo Correa (@correapabloivan). Escucha (y recomienda) el podcast a continuación...</googleplay:description>
+			<itunes:duration>00:30:23</itunes:duration>
+			<link>https://loxaesmas.org/2012/11/17/t01e02-tecnologia-arte-y-cultura-manuel-carrion-pinzano-el-gad-municipal-y-loja-inteligente.html</link>
+			<itunes:image href="https://s3.amazonaws.com/podcast_/t01/t01e02.jpg"></itunes:image>
+			<itunes:episodeType>full</itunes:episodeType>
+			<comments>https://loxaesmas.org/2012/11/17/t01e02-tecnologia-arte-y-cultura-manuel-carrion-pinzano-el-gad-municipal-y-loja-inteligente.html#comments</comments>
+			<itunes:subtitle>La ganadora de la camiseta de esta semana es... Katherine Castillo (@Kathucastillo), felicidades !</itunes:subtitle>
+			<itunes:keywords>ecuador, Jeamil Burneo, Lindon Sanmartin, loja, Loja Inteligente, loxa, manuel carrión pinzano, podcast, t01, t01e02, William Brayanes</itunes:keywords>
+			<itunes:order>4</itunes:order>
+		<!-- fin de la edición -->
+			<itunes:explicit>false</itunes:explicit>
+			<googleplay:explicit>no</googleplay:explicit>			
+			<itunes:author>#LoxaEsMás</itunes:author>
+			<dc:publisher>#LoxaEsMás</dc:publisher>
+			<category>Podcast</category>
+			<georss:point>-3.9884720000 -79.2682480333</georss:point>
+			<georss:elev>2958</georss:elev>
+			<author>hola@loxaesmas.org (#LoxaEsMás)</author>
+			<itunes:isClosedCaptioned>no</itunes:isClosedCaptioned>
+			<dc:creator>#LoxaEsMás</dc:creator>		
+		</item>
+
+		<item>
+			<guid isPermaLink="false">t01e03_avance</guid>
+			<title>t01e03 avance</title>
+			<itunes:title>t01e03 avance</itunes:title>
+			<itunes:season>01</itunes:season>
+			<itunes:episode>03</itunes:episode>
+			<enclosure url="https://s3.amazonaws.com/podcast_/t01/t01e03_avance.mp3" length="1206774" type="audio/mpeg" />
+			<pubDate>Tue, 20 Nov 2012 10:30:00 -0500</pubDate>
+			<descrription>Avance de 30 segundos del tercer episodio del podcast #t01e01</descrription>
+			<itunes:summary>Avance de 30 segundos del tercer episodio del podcast #t01e01</itunes:summary>
+			<content:encoded>Avance de 30 segundos del tercer episodio del podcast #t01e01</content:encoded>
+			<googleplay:description>Avance de 30 segundos del tercer episodio del podcast #t01e01</googleplay:description>
+			<itunes:duration>00:00:30</itunes:duration>
+			<link>https://loxaesmas.org/2012/11/24/t01e03-cine-emprendimiento-deporte-mision-sonrisa-y-geovanny-aguinsaca.html</link>
+			<itunes:image href="https://s3.amazonaws.com/podcast_/t01/t01e03.jpg"></itunes:image>
+			<itunes:episodeType>trailer</itunes:episodeType>
+			<comments>https://loxaesmas.org/2012/11/24/t01e03-cine-emprendimiento-deporte-mision-sonrisa-y-geovanny-aguinsaca.html#comments</comments>
+			<itunes:subtitle>Un abreboca del tercer episodio del podcast #t01e03</itunes:subtitle>
+			<itunes:keywords>#t01e03</itunes:keywords>
+			<itunes:order>5</itunes:order>
+		<!-- fin de la edición -->
+			<itunes:explicit>false</itunes:explicit>
+			<googleplay:explicit>no</googleplay:explicit>			
+			<itunes:author>#LoxaEsMás</itunes:author>
+			<dc:publisher>#LoxaEsMás</dc:publisher>
+			<category>Podcast</category>
+			<georss:point>-3.9884720000 -79.2682480333</georss:point>
+			<georss:elev>2958</georss:elev>
+			<author>hola@loxaesmas.org (#LoxaEsMás)</author>
+			<itunes:isClosedCaptioned>no</itunes:isClosedCaptioned>
+			<dc:creator>#LoxaEsMás</dc:creator>
+		</item>
+
+		<item>
+			<guid isPermaLink="false">t01e03</guid>
+			<title>Cine, emprendimiento, deporte, Misión Sonrisa y Geovanny Aguinsaca</title>
+			<itunes:title>Cine, emprendimiento, deporte, Misión Sonrisa y Geovanny Aguinsaca</itunes:title>
+			<itunes:season>01</itunes:season>
+			<itunes:episode>03</itunes:episode>
+			<enclosure url="https://s3.amazonaws.com/podcast_/t01/t01e03.mp3" length="30831835" type="audio/mpeg" />
+			<pubDate>Sat, 24 Nov 2012 20:30:00 -0500</pubDate>
+			<descrription>Hackeando la tecnología, el deporte, la democracia, nuevas iniciativas en Loxa, Misión Sonrisa y más... mucho más. Hoy inauguramos las conversaciones: “Concejal: yo voté por usted”, claramente y sin intermediarios, votantes y elegidos, en este episodio Ulises Acosta (@uloacosta) conversa objetiva y directamente con Geovanny Aguinsaca, su concejal elegido, pidiéndole cuentas de su gestión dentro del cabildo lojano. El cine en Loxa con José Paul Moreira, Abel Suing (@abelsuing) y Álvaro Castillo (@genesys33) conversan abiertamente sobre el sétpimo arte loxano. Fomentemos las artes, la industria... David Eguiguren (@tokirokenyu) y Andrés Moreira (@moreiraandres) nos revelan detalles de una nueva iniciativa tecnológica. Mi corazón por tu sonrisa... escucha ésta conversación con Juan Andrés Gonzáles (@pupipupples), Jani Rojas (@jani_rojas) y Roberto Beltrán (@librepensador) sobre Misión Sonrisa (@misionsonrisa16) y sus actividades. Y para cerrar, invitamos a Yadira Guamán (@alexandrayadi) y Maritza Guamán, nuestras representantes olímpicas en Londres, quienes conversaran con René Ortega (@rortegariofrio) y Mario Gualán (@mario_gualan) sobre el día a día de una disciplina que exige mucho esfuerzo y de sus logros obtenidos. ¿Tu crees que Loxa, es sólo fútbol?. Escucha (y recomienda) el podcast a continuación...</descrription>
+			<itunes:summary>Hackeando la tecnología, el deporte, la democracia, nuevas iniciativas en Loxa, Misión Sonrisa y más... mucho más. Hoy inauguramos las conversaciones: “Concejal: yo voté por usted”, claramente y sin intermediarios, votantes y elegidos, en este episodio Ulises Acosta (@uloacosta) conversa objetiva y directamente con Geovanny Aguinsaca, su concejal elegido, pidiéndole cuentas de su gestión dentro del cabildo lojano. El cine en Loxa con José Paul Moreira, Abel Suing (@abelsuing) y Álvaro Castillo (@genesys33) conversan abiertamente sobre el sétpimo arte loxano. Fomentemos las artes, la industria... David Eguiguren (@tokirokenyu) y Andrés Moreira (@moreiraandres) nos revelan detalles de una nueva iniciativa tecnológica. Mi corazón por tu sonrisa... escucha ésta conversación con Juan Andrés Gonzáles (@pupipupples), Jani Rojas (@jani_rojas) y Roberto Beltrán (@librepensador) sobre Misión Sonrisa (@misionsonrisa16) y sus actividades. Y para cerrar, invitamos a Yadira Guamán (@alexandrayadi) y Maritza Guamán, nuestras representantes olímpicas en Londres, quienes conversaran con René Ortega (@rortegariofrio) y Mario Gualán (@mario_gualan) sobre el día a día de una disciplina que exige mucho esfuerzo y de sus logros obtenidos. ¿Tu crees que Loxa, es sólo fútbol?. Escucha (y recomienda) el podcast a continuación...</itunes:summary>
+			<content:encoded>Hackeando la tecnología, el deporte, la democracia, nuevas iniciativas en Loxa, Misión Sonrisa y más... mucho más. Hoy inauguramos las conversaciones: “Concejal: yo voté por usted”, claramente y sin intermediarios, votantes y elegidos, en este episodio Ulises Acosta (@uloacosta) conversa objetiva y directamente con Geovanny Aguinsaca, su concejal elegido, pidiéndole cuentas de su gestión dentro del cabildo lojano. El cine en Loxa con José Paul Moreira, Abel Suing (@abelsuing) y Álvaro Castillo (@genesys33) conversan abiertamente sobre el sétpimo arte loxano. Fomentemos las artes, la industria... David Eguiguren (@tokirokenyu) y Andrés Moreira (@moreiraandres) nos revelan detalles de una nueva iniciativa tecnológica. Mi corazón por tu sonrisa... escucha ésta conversación con Juan Andrés Gonzáles (@pupipupples), Jani Rojas (@jani_rojas) y Roberto Beltrán (@librepensador) sobre Misión Sonrisa (@misionsonrisa16) y sus actividades. Y para cerrar, invitamos a Yadira Guamán (@alexandrayadi) y Maritza Guamán, nuestras representantes olímpicas en Londres, quienes conversaran con René Ortega (@rortegariofrio) y Mario Gualán (@mario_gualan) sobre el día a día de una disciplina que exige mucho esfuerzo y de sus logros obtenidos. ¿Tu crees que Loxa, es sólo fútbol?. Escucha (y recomienda) el podcast a continuación...</content:encoded>
+			<googleplay:description>Hackeando la tecnología, el deporte, la democracia, nuevas iniciativas en Loxa, Misión Sonrisa y más... mucho más. Hoy inauguramos las conversaciones: “Concejal: yo voté por usted”, claramente y sin intermediarios, votantes y elegidos, en este episodio Ulises Acosta (@uloacosta) conversa objetiva y directamente con Geovanny Aguinsaca, su concejal elegido, pidiéndole cuentas de su gestión dentro del cabildo lojano. El cine en Loxa con José Paul Moreira, Abel Suing (@abelsuing) y Álvaro Castillo (@genesys33) conversan abiertamente sobre el sétpimo arte loxano. Fomentemos las artes, la industria... David Eguiguren (@tokirokenyu) y Andrés Moreira (@moreiraandres) nos revelan detalles de una nueva iniciativa tecnológica. Mi corazón por tu sonrisa... escucha ésta conversación con Juan Andrés Gonzáles (@pupipupples), Jani Rojas (@jani_rojas) y Roberto Beltrán (@librepensador) sobre Misión Sonrisa (@misionsonrisa16) y sus actividades. Y para cerrar, invitamos a Yadira Guamán (@alexandrayadi) y Maritza Guamán, nuestras representantes olímpicas en Londres, quienes conversaran con René Ortega (@rortegariofrio) y Mario Gualán (@mario_gualan) sobre el día a día de una disciplina que exige mucho esfuerzo y de sus logros obtenidos. ¿Tu crees que Loxa, es sólo fútbol?. Escucha (y recomienda) el podcast a continuación...</googleplay:description>
+			<itunes:duration>00:30:23</itunes:duration>
+			<link>https://loxaesmas.org/2012/11/24/t01e03-cine-emprendimiento-deporte-mision-sonrisa-y-geovanny-aguinsaca.html</link>
+			<itunes:image href="https://s3.amazonaws.com/podcast_/t01/t01e03.jpg"></itunes:image>
+			<itunes:episodeType>full</itunes:episodeType>
+			<comments>https://loxaesmas.org/2012/11/24/t01e03-cine-emprendimiento-deporte-mision-sonrisa-y-geovanny-aguinsaca.html#comments</comments>
+			<itunes:subtitle>La ganadora de la camiseta de esta semana es… Gabriela Narváez (@narvaezgm), felicidades ! te contactaremos, y mucha suerte para los participantes de éste sorteo.</itunes:subtitle>
+			<itunes:keywords> cine, deporte, emprendimiento, Geovanny Aguinsaca, Misión Sonrisa, t01, t01e03</itunes:keywords>
+			<itunes:order>6</itunes:order>
+		<!-- fin de la edición -->
+			<itunes:explicit>false</itunes:explicit>
+			<googleplay:explicit>no</googleplay:explicit>			
+			<itunes:author>#LoxaEsMás</itunes:author>
+			<dc:publisher>#LoxaEsMás</dc:publisher>
+			<category>Podcast</category>
+			<georss:point>-3.9884720000 -79.2682480333</georss:point>
+			<georss:elev>2958</georss:elev>
+			<author>hola@loxaesmas.org (#LoxaEsMás)</author>
+			<itunes:isClosedCaptioned>no</itunes:isClosedCaptioned>
+			<dc:creator>#LoxaEsMás</dc:creator>		
+		</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<item>
+		<!-- empezar a editar -->
+			<guid isPermaLink="false">t01e04</guid>
+			<title>t01e04</title>
+			<pubDate>Sat, 01 Dec 2012 20:30:00 -0500</pubDate>
+			<enclosure url="http://s3.amazonaws.com/podcast_/t01/t01e04.mp3" length="31164307" type="audio/mpeg" />
+			<link>http://x.loxaesmas.org/pt01e04</link>
+			<comments>http://x.loxaesmas.org/pt01e04#comments</comments>
+			<author>hola@loxaesmas.org (#LoxaEsMás)</author>
+			<itunes:subtitle>Ismael Betancourt, emprendimiento, lúdica y CineClub</itunes:subtitle>
+			<itunes:summary>En nuestro segmento “Concejal: yo voté por usted” Ronald Eras (@ronald_eras) conversa con Ismael Betancourt pidiéndole cuentas de su gestión y conectando concejales con votantes; Manuel Agustín Godoy, emprendedor loxano, conversa con Pablo Andrés Duque (@pabloaduquec), Mayra Herrera (@mayraherreraj) y Javier Flores (@tapeku) sobre el emprendimiento en nuestra ciudad.
+¿Recuerdas cuándo jugabas la rayuela, la moña, los cherecos, el trompo y carros de palo? Invitamos a Stalin Alvear para que junto a René Ortega (@rortegariofrio) hackeen las costumbres de nuestra antigua niñez loxana. También conversamos con Wilson Castillo artista plástico loxano y coordinador del CineClub Lumière.</itunes:summary>
+			<itunes:image href="http://s3.amazonaws.com/podcast_/t01/t01e04.jpg"></itunes:image>
+			<itunes:keywords>#t01e04</itunes:keywords>
+		<!-- fin de la edición -->
+			<itunes:duration>00:30:59</itunes:duration>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:author>#LoxaEsMás</itunes:author>
+			<dc:publisher>#LoxaEsMás</dc:publisher>
+			<category>Podcast</category>
+			<georss:point>-3.9884720000 -79.2682480333</georss:point>
+			<georss:elev>2958</georss:elev>
+			<!--
+				<itunes:order>1</itunes:order>
+				<itunes:isClosedCaptioned>no</itunes:isClosedCaptioned>
+				<dc:creator>#LoxaEsMás</dc:creator>
+			-->
+		</item>
+
+		<item>
+		<!-- empezar a editar -->
+			<guid isPermaLink="false">t01e05_avance</guid>
+			<title>t01e05 avance</title>
+			<pubDate>Thu, 13 Dec 2012 21:30:00 -0500</pubDate>
+			<enclosure url="http://s3.amazonaws.com/podcast_/t01/t01e05_avance.mp3" length="558576" type="audio/mpeg" />
+			<link>http://loxaesmas.org/podcast</link>
+			<comments>http://loxaesmas.org/podcast#comments</comments>
+			<author>hola@loxaesmas.org (#LoxaEsMás)</author>
+			<itunes:subtitle>30 segundos del quinto episodio del podcast #t01e05</itunes:subtitle>
+			<itunes:summary>30 segundos del quinto episodio del podcast #t01e05</itunes:summary>
+			<itunes:image href="http://s3.amazonaws.com/podcast_/t01/t01e05.jpg"></itunes:image>
+			<itunes:keywords>avance</itunes:keywords>
+		<!-- fin de la edición -->
+			<itunes:duration>00:00:30</itunes:duration>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:author>#LoxaEsMás</itunes:author>
+			<dc:publisher>#LoxaEsMás</dc:publisher>
+			<category>Podcast</category>
+			<georss:point>-3.9884720000 -79.2682480333</georss:point>
+			<georss:elev>2958</georss:elev>
+        	<!-- sin validar
+				<itunes:order>1</itunes:order>
+				<itunes:isClosedCaptioned>no</itunes:isClosedCaptioned>
+				<dc:creator>#LoxaEsMás</dc:creator>
+			-->
+		</item>
+
+		<item>
+		<!-- empezar a editar -->
+			<guid isPermaLink="false">t01e05</guid>
+			<title>t01e05</title>
+			<pubDate>Sat, 15 Dec 2012 20:30:00 -0500</pubDate>
+			<enclosure url="http://s3.amazonaws.com/podcast_/t01/t01e05.mp3" length="30277471" type="audio/mpeg" />
+			<link>http://x.loxaesmas.org/pt01e05</link>
+			<comments>http://x.loxaesmas.org/pt01e05#comments</comments>
+			<author>hola@loxaesmas.org (#LoxaEsMás)</author>
+			<itunes:subtitle>Club de Parapente, Concejal Golfa Bejarano, Delegación CNE-Loxa y Christian Mora</itunes:subtitle>
+			<itunes:summary>Volar alto sobre nuestras colinas loxanas, veeduría, conversar, tecnología, y más... mucho más para éste #t01e05. Continuamos pidiendo cuentas de gestión, Denisse Calle @niches13 entrevista a la Concejal Golfa Bejarano. Luego sin miedo y en compañía de Maluli Fernández (@malufertan) volamos alto junto a Camilo Castro y Carlos Jaramillo, pilotos del Club de Parapente Loja. Además Rommel Gutiérrez (@ragutierrezcroa) conversa con Cristian Mora (@christmo) sobre la presencia de Loxa en el último Campus Party en Quito, y calú conversa con Pedro Valdivieso Director del CNE – Loxa proponiendo un debate entre candidatos.</itunes:summary>
+			<itunes:image href="http://s3.amazonaws.com/podcast_/t01/t01e05.jpg"></itunes:image>
+			<itunes:keywords>#t01e05</itunes:keywords>
+		<!-- fin de la edición -->
+			<itunes:duration>00:30:07</itunes:duration>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:author>#LoxaEsMás</itunes:author>
+			<dc:publisher>#LoxaEsMás</dc:publisher>
+			<category>Podcast</category>
+			<georss:point>-3.9884720000 -79.2682480333</georss:point>
+			<georss:elev>2958</georss:elev>
+			<!--
+				<itunes:order>1</itunes:order>
+				<itunes:isClosedCaptioned>no</itunes:isClosedCaptioned>
+				<dc:creator>#LoxaEsMás</dc:creator>
+			-->
+		</item>
+
+		<item>
+		<!-- empezar a editar -->
+			<guid isPermaLink="false">hacks del 2012</guid>
+			<title>hacks del 2012</title>
+			<pubDate>Thu, 20 Dec 2012 20:30:00 -0500</pubDate>
+			<enclosure url="http://s3.amazonaws.com/videos_/hacks2012_720.mov" length="85016949" type="video/quicktime" />
+			<link>http://loxaesmas.org/2012/12/20/hacks-del-2012.html</link>
+			<comments>http://loxaesmas.org/2012/12/20/hacks-del-2012.html#comments</comments>
+			<author>hola@loxaesmas.org (#LoxaEsMás)</author>
+			<itunes:subtitle>Cerramos el 2012 con algunos hacks a la democracia que el colectivo emprendió en un video corto</itunes:subtitle>
+			<itunes:summary>Cerramos el 2012 con algunos hacks a la democracia que el colectivo emprendió, por orden cronológico tenemos los más importantes:
+
+• Definición de lo que somos
+• Un post inicial de calú que prendió la mecha
+• La primera reunión física (1.0) del colectivo
+• El archifamoso Twit Callejero
+• La presentación de colectivo en la Sesión del Cabildo
+• La segunda reunión física (1.0) del colectivo
+• La #MinkaDeLoxa
+• El recibimiento a los ganadores del Campus Party Quito
+• El podcast incluyendo el segmento “Concejal: yo voté por usted”
+
+Gracias a @abelsuing, @anacris_malo, @ghidalgoandrade, @tortUe_kthe, @carolus_ruiz, @yomimu, @Juanpablin75,@tefytox y @salito_io por acolitar contándonos la definición del colectivo. Gracias a las cámaras de @vikovm y a@9pato9, y a la edición del video de @tokirokenyu. Mención especial para los politiqueros, los administradores temporales de la cosa púbica, y los candidatos, les tenemos varias cosas preparadas para el año que viene. Pero sobretodo gracias a los integrantes del colectivo, entre todos día a día estamos hackeando la democracia activamente. Feliz 2013 y recuerden que “...estamos despertando y conectándonos, estamos observando, pero no estamos esperando“.</itunes:summary>
+			<itunes:image href="http://s3.amazonaws.com/videos_/hacksdel2012.jpg"></itunes:image>
+			<itunes:keywords>2012, loxa, loxaesmas, loja, ecuador, hack, participación ciudadana, democracia, twit callejero, minkadeloxa, municipio, alcalde, concejales, campus party quito, podcast</itunes:keywords>
+		<!-- fin de la edición -->
+			<itunes:duration>00:01:31</itunes:duration>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:author>#LoxaEsMás</itunes:author>
+			<dc:publisher>#LoxaEsMás</dc:publisher>
+			<category>Videocast</category>
+			<georss:point>-3.9884720000 -79.2682480333</georss:point>
+			<georss:elev>2958</georss:elev>
+			<!--
+				<itunes:order>1</itunes:order>
+				<itunes:isClosedCaptioned>no</itunes:isClosedCaptioned>
+				<dc:creator>#LoxaEsMás</dc:creator>
+			-->
+		</item>
+
+		<item>
+		<!-- empezar a editar -->
+			<guid isPermaLink="false">t01e06_avance</guid>
+			<title>t01e06 avance</title>
+			<pubDate>Fri, 28 Dec 2012 14:00:00 -0500</pubDate>
+			<enclosure url="http://s3.amazonaws.com/podcast_/t01/t01e06_avance.mp3" length="558989" type="audio/mpeg" />
+			<link>http://loxaesmas.org/podcast</link>
+			<comments>http://loxaesmas.org/podcast#comments</comments>
+			<author>hola@loxaesmas.org (#LoxaEsMás)</author>
+			<itunes:subtitle>Avance de 30 segundos del sexto episodio del podcast #t01e06</itunes:subtitle>
+			<itunes:summary>Avance de 30 segundos del sexto episodio del podcast #t01e06</itunes:summary>
+			<itunes:image href="http://s3.amazonaws.com/podcast_/t01/t01e06_avance.jpg"></itunes:image>
+			<itunes:keywords>avance</itunes:keywords>
+		<!-- fin de la edición -->
+			<itunes:duration>00:00:31</itunes:duration>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:author>#LoxaEsMás</itunes:author>
+			<dc:publisher>#LoxaEsMás</dc:publisher>
+			<category>Podcast</category>
+			<georss:point>-3.9884720000 -79.2682480333</georss:point>
+			<georss:elev>2958</georss:elev>
+        	<!-- sin validar
+				<itunes:order>1</itunes:order>
+				<itunes:isClosedCaptioned>no</itunes:isClosedCaptioned>
+				<dc:creator>#LoxaEsMás</dc:creator>
+			-->
+		</item>
+
+		<item>
+		<!-- empezar a editar -->
+			<guid isPermaLink="false">t01e06</guid>
+			<title>t01e06</title>
+			<pubDate>Sat, 29 Dec 2012 20:30:00 -0500</pubDate>
+			<enclosure url="http://s3.amazonaws.com/podcast_/t01/t01e06.mp3" length="30277471" type="audio/mpeg" />
+			<link>http://x.loxaesmas.org/pt01e06</link>
+			<comments>http://x.loxaesmas.org/pt01e06#comments</comments>
+			<author>hola@loxaesmas.org (#LoxaEsMás)</author>
+			<itunes:subtitle>Parque Eólico Villonaco, Santiago Carpio y Concejal Patricio Valdivieso</itunes:subtitle>
+			<itunes:summary>En nuestro último episodio de la primera temporada generaremos mucha energía, sobre todo limpia, junto a José Vicente Aguirre (@josevaguirre) y a Malena Gonzales (@maggieligg) que nos contarán detalles de ésta “quijotada”. También Santiago Carpio (@santiagocarpior) Yalila Loaiza (@yali_loaiza) conversa sobre su trayectoria en el escenario y sobre como ve a Loxa culturalmente desde tras bastidores. ¡Pero también hacemos veeduría! Álvaro Castillo (@genesys33) pide cuentas de gestión a Patricio Valdivieso (@pavevaldiviezo) concejal del cantón Loxa, lo hace a la manera #LoxaEsMás: Directa y objetivamente.</itunes:summary>
+			<itunes:image href="http://s3.amazonaws.com/podcast_/t01/t01e06.jpg"></itunes:image>
+			<itunes:keywords>#t01e06</itunes:keywords>
+		<!-- fin de la edición -->
+			<itunes:duration>00:30:07</itunes:duration>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:author>#LoxaEsMás</itunes:author>
+			<dc:publisher>#LoxaEsMás</dc:publisher>
+			<category>Podcast</category>
+			<georss:point>-3.9884720000 -79.2682480333</georss:point>
+			<georss:elev>2958</georss:elev>
+			<!--
+				<itunes:order>1</itunes:order>
+				<itunes:isClosedCaptioned>no</itunes:isClosedCaptioned>
+				<dc:creator>#LoxaEsMás</dc:creator>
+			-->
+		</item>
+
+
+		<item>
+		<!-- empezar a editar -->
+			<guid isPermaLink="false">Lee, reflexiona, conversa y vota</guid>
+			<title>Lee, reflexiona, conversa y vota</title>
+			<pubDate>Sat, 05 Jan 2013 20:30:00 -0500</pubDate>
+			<enclosure url="http://s3.amazonaws.com/videos_/asambleistas.mov" length="19732850" type="video/quicktime" />
+			<link>http://loxaesmas.org/2013/01/05/lee-reflexiona-conversa-y-vota.html</link>
+			<comments>http://loxaesmas.org/2013/01/05/lee-reflexiona-conversa-y-vota.html#comments</comments>
+			<author>hola@loxaesmas.org (#LoxaEsMás)</author>
+			<itunes:subtitle>http://asambleistas.loxaesmas.org/</itunes:subtitle>
+			<itunes:summary>Lee
+No te comas la propaganda electorera proselitista de los políticos en tiempos de campaña. Lee sus propuestas.
+
+Reflexiona
+Que mucha falta nos hace a todos.
+
+Conversa
+En Twitter estamos usando la etiqueta #LoxaEsMás, únete a esta conversación de altura sobre las propuestas y sin insultos.
+
+Vota
+Gracias a @macool hoy lanzamos la aplicación para votar en la web, es como votar en una papeleta de verdad con la ventaja de que puedes leer las propuestas:
+
+También encontrarás estadísticas diarias en tiempo real, y los/as posibles cuatro asambleístas que nos representarán aplicando el Sistema D’Hondt. Para votar simplemente debes ir a:
+
+http://asambleistas.loxaesmas.org/
+Y si te gustó compártelo con tus amigos/conocidos en las redes sociales.</itunes:summary>
+			<itunes:image href="http://s3.amazonaws.com/podcast_/logo.jpg"></itunes:image>
+			<itunes:keywords>#EleccionesEC, 2013, asambleístas, loja, loxa, Sistema D'Hondt</itunes:keywords>
+		<!-- fin de la edición -->
+			<itunes:duration>00:00:30</itunes:duration>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:author>#LoxaEsMás</itunes:author>
+			<dc:publisher>#LoxaEsMás</dc:publisher>
+			<category>Videocast</category>
+			<georss:point>-3.9884720000 -79.2682480333</georss:point>
+			<georss:elev>2958</georss:elev>
+			<!--
+				<itunes:order>1</itunes:order>
+				<itunes:isClosedCaptioned>no</itunes:isClosedCaptioned>
+				<dc:creator>#LoxaEsMás</dc:creator>
+			-->
+		</item>
+
+
+
+
+
+
+
+<!-- ************************************************
+		segunda temporada
+	************************************************ -->
+
+		<item>
+		<!-- empezar a editar -->
+			<guid isPermaLink="false">t02e01</guid>
+			<title>t02e01</title>
+			<pubDate>Sat, 20 Apr 2013 20:30:00 -0500</pubDate>
+			<enclosure url="http://s3.amazonaws.com/podcast_/t02/t02e01.mp3" length="29835964" type="audio/mpeg" />
+			<link>http://loxaesmas.org/2013/04/20/t02e01.html</link>
+			<comments>http://loxaesmas.org/2013/04/20/t02e01.html#comments</comments>
+			<author>hola@loxaesmas.org (#LoxaEsMás)</author>
+			<itunes:subtitle>Literatura Loxana, estudiando Comunicación Social, y Concejal Darío Loja</itunes:subtitle>
+			<itunes:summary>¡Bienvenidos a la segunda temporada del podcast de #LoxaEsMas!. Ahora iniciamos el primer episodio de esta nueva etapa, el podcast #t02e01 empieza para ustedes.
+
+José Rodrigo Sánchez, Viko Valdiviezo (@VikoValdiviezo) y Lenin Paladines (@lvpaladines) desde diferentes perspectivas charlan sobre sus experiencias en la creación literaria y la comunicación social. Estarán también Pablo Correa (@correapabloivan) y el concejal Darío Loja (@DLoja) en el segmento “Concejal!, Yo vote por usted!”, espacio para que los ciudadanos tomemos cuentas a nuestros representantes en el Municipio de Loja.
+
+Esta vez hackearemos la literatura, la educación y la comunicación en la Centinela del Sur. Escucha (y recomienda) el podcast a continuación...</itunes:summary>
+			<itunes:image href="http://s3.amazonaws.com/podcast_/t02/t02e01.jpg"></itunes:image>
+			<itunes:keywords>#t02e01</itunes:keywords>
+		<!-- fin de la edición -->
+			<itunes:duration>00:30:48</itunes:duration>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:author>#LoxaEsMás</itunes:author>
+			<dc:publisher>#LoxaEsMás</dc:publisher>
+			<category>Podcast</category>
+			<georss:point>-3.9884720000 -79.2682480333</georss:point>
+			<georss:elev>2958</georss:elev>
+			<!--
+				<itunes:order>1</itunes:order>
+				<itunes:isClosedCaptioned>no</itunes:isClosedCaptioned>
+				<dc:creator>#LoxaEsMás</dc:creator>
+			-->
+		</item>
+
+		<item>
+		<!-- empezar a editar -->
+			<guid isPermaLink="false">t02e02</guid>
+			<title>t02e02</title>
+			<pubDate>Sat, 4 May 2013 20:30:00 -0500</pubDate>
+			<enclosure url="http://s3.amazonaws.com/podcast_/t02/t02e02.mp3" length="30430748" type="audio/mpeg" />
+			<link>http://loxaesmas.org/2013/05/04/t02e02.html</link>
+			<comments>http://loxaesmas.org/2013/05/04/t02e02.html#comments</comments>
+			<author>hola@loxaesmas.org (#LoxaEsMás)</author>
+			<itunes:subtitle>Loxa soñada, María Cristina Meneses, cultura y el arte de la palabra</itunes:subtitle>
+			<itunes:summary>Bienvenidos al segundo podcast, de la segunda temporada, de #LoxaEsMas!. Prepara tu café lojano, destapa tu botella de vino que, en esta ocasión, hackearemos la democracia, la cultura y conoceremos la Loxa soñada.
+
+En “Concejal: Yo voté por usted”, desde Cuenca,  utilizando a Skype como una herramienta para acortar distancias, Felipe Ochoa (@pipe8amo) pide cuentas de gestión a la edil María Cristina Meneses (@MaCrisMeneses).
+
+Además, Renato Ágila (@aratnato) junto a Yalilé Loaiza (@yali_loaiza) hackean al Foro de Oradores de Loxa, nos comentan acerca del aporte del Foro a la cultura loxana.
+
+Y aún hay más, las narices rojas se apoderan del #t02e02, los integrantes de Misión Sonrisa:  Jani Rojas (@jani_rojas), Juan Andrés González (@pupigz), Marisa Sarmiento (@isamarie6), Karla González (@krlis19) y Jorge Andrade (@jorgeandradems) hablan de su Loxa soñada.
+
+“Loxa es más, mucho más, pretende amplificar las voces de los ciudadanos...” ¡Vamos! se un hacker de la democracia. Escucha, recomienda y genera conversación del podcast a continuación...</itunes:summary>
+			<itunes:image href="http://s3.amazonaws.com/podcast_/t02/t02e02.jpg"></itunes:image>
+			<itunes:keywords>#t02e02</itunes:keywords>
+		<!-- fin de la edición -->
+			<itunes:duration>00:30:17</itunes:duration>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:author>#LoxaEsMás</itunes:author>
+			<dc:publisher>#LoxaEsMás</dc:publisher>
+			<category>Podcast</category>
+			<georss:point>-3.9884720000 -79.2682480333</georss:point>
+			<georss:elev>2958</georss:elev>
+			<!--
+				<itunes:order>1</itunes:order>
+				<itunes:isClosedCaptioned>no</itunes:isClosedCaptioned>
+				<dc:creator>#LoxaEsMás</dc:creator>
+			-->
+		</item>
+
+
+		<item>
+		<!-- empezar a editar -->
+			<guid isPermaLink="false">t02e03</guid>
+			<title>t02e03</title>
+			<pubDate>Sat, 11 May 2013 20:30:00 -0500</pubDate>
+			<enclosure url="http://s3.amazonaws.com/podcast_/t02/t02e03.mp3" length="30155387" type="audio/mpeg" />
+			<link>http://x.loxaesmas.org/pt02e03</link>
+			<comments>http://x.loxaesmas.org/pt02e03#comments</comments>
+			<author>hola@loxaesmas.org (#LoxaEsMás)</author>
+			<itunes:subtitle>Auto y aeromodelismo, periodismo loxano y Johanna Sarmiento</itunes:subtitle>
+			<itunes:summary>Bienvenidos al tercer podcast, de la segunda temporada, de #LoxaEsMas!. hoy, hackeareamos al club de Auto y Aeromodelismo de Loxa, además conoce acerca del periodismo en la Castellana y como siempre, hackeamos a la democracia pidiendo cuentas de gestión a nuestros ediles. Ponte cómodo que ¡empezamos!
+
+En “Concejal: Yo voté por usted”, Ronald Eras (@ronald_eras) pide cuentas de gestión a la concejal Johanna Sarmiento.
+
+Periodismo en Loxa, Sheyla Castillo (@Shila07) junto a Yalilé Loaiza (@yali_loaiza) conversan sobre la evolución periodística en la ciudad.
+
+Espera que hay más, Pablo Correa (@correapabloivan) se inmiscuye en el club de auto y aeromodelismo de Loja, junto a Eduardo Punín.
+
+“Loxa es más, mucho más, pretende amplificar las voces de los ciudadanos...” ¡Vamos! se un hacker de la democracia. Escucha, recomienda y genera conversación del podcast a continuación...</itunes:summary>
+			<itunes:image href="http://s3.amazonaws.com/podcast_/t02/t02e03.jpg"></itunes:image>
+			<itunes:keywords>#t02e03</itunes:keywords>
+		<!-- fin de la edición -->
+			<itunes:duration>00:30:00</itunes:duration>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:author>#LoxaEsMás</itunes:author>
+			<dc:publisher>#LoxaEsMás</dc:publisher>
+			<category>Podcast</category>
+			<georss:point>-3.9884720000 -79.2682480333</georss:point>
+			<georss:elev>2958</georss:elev>
+			<!--
+				<itunes:order>1</itunes:order>
+				<itunes:isClosedCaptioned>no</itunes:isClosedCaptioned>
+				<dc:creator>#LoxaEsMás</dc:creator>
+			-->
+		</item>
+
+
+	</channel>
+</rss>
